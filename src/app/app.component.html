@@ -119,6 +119,12 @@
     <img class="line3" src="./assets/images/line3.png" alt="line" />
     <div class="container">
       <div class="common-title">Закажите печенье</div>
+      <div class="sugar-free">
+        <div>Все</div>
+        <input type="checkbox" id="switch" (change)="switchSugarFree($event)" />
+        <label for="switch"></label>
+        <div>Без сахара</div>
+      </div>
       <img
         class="order-bg-image"
         src="./assets/images/breadcrumbs.png"
@@ -176,7 +182,11 @@
           </div>
         </div>
         <div class="order-block-image">
-          <img class="order-image" src="./assets//order.png" alt="cookies" />
+          <img
+            class="order-image"
+            src="./assets/images/order.png"
+            alt="cookies"
+          />
         </div>
       </div>
     </div>

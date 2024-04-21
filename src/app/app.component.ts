@@ -145,6 +145,11 @@ ngOnInit() {
 }
   }
 
+  switchSugarFree(e: any) {
+  this.http.get("https://testologia.ru/cookies" + (e.currentTarget.checked ? '?sugarfree' : ''))
+    .subscribe(data => this.productsData = data);
+}
+
   changeCurrency(){
      
   let newCurrency = "$";
