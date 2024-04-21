@@ -44,7 +44,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "itCookiesAngular_intensive2024"
+              "baseHref": "itCookiesAngular_production"
             },
             "development": {
               "buildOptimizer": false,
