@@ -61,6 +61,12 @@
     <div class="container">
       <img class="line2" src="./assets/images/line2.png" alt="line" />
       <div class="common-title">Выберите печенье</div>
+            <div class="sugar-free">
+        <div>Все</div>
+        <input type="checkbox" id="switch" (change)="switchSugarFree($event)" />
+        <label for="switch"></label>
+        <div>Без сахара</div>
+      </div>
       <div class="products-items">
         <div class="products-item" *ngFor="let product of productsData">
           <div class="products-item-image">
@@ -119,12 +125,6 @@
     <img class="line3" src="./assets/images/line3.png" alt="line" />
     <div class="container">
       <div class="common-title">Закажите печенье</div>
-      <div class="sugar-free">
-        <div>Все</div>
-        <input type="checkbox" id="switch" (change)="switchSugarFree($event)" />
-        <label for="switch"></label>
-        <div>Без сахара</div>
-      </div>
       <img
         class="order-bg-image"
         src="./assets/images/breadcrumbs.png"
