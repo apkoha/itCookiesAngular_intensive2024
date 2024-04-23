@@ -61,7 +61,7 @@
     <div class="container">
       <img class="line2" src="./assets/images/line2.png" alt="line" />
       <div class="common-title">Выберите печенье</div>
-            <div class="sugar-free">
+      <div class="sugar-free">
         <div>Все</div>
         <input type="checkbox" id="switch" (change)="switchSugarFree($event)" />
         <label for="switch"></label>
@@ -199,3 +199,12 @@
     <div class="rights">«Все права защищены»</div>
   </footer>
 </main>
+
+<div class="loader" [class]="{ showed: loaderShowed }" *ngIf="loader">
+  <lottie-player
+    src="./assets/cookie.json"
+    background="transparent"
+    speed="1.5"
+    autoplay
+  ></lottie-player>
+</div>
